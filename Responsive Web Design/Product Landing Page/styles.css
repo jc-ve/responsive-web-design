@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #eee;
+}
+
+#container {
+  width: 90%;
+  margin: auto;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 0em;
+}
+
+#header-img {
+  width: 20em;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  margin-right: 10em;
+}
+
+.nav-link:last-of-type {
+  margin-right: 0;
+}
+
+#form {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+#email {
+  width: 30%;
+  display: block;
+  margin: 1.25em auto;
+  padding: 0.35em;
+}
+
+#submit {
+  background-color: #f1c40f;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0.4em 2em;
+  border: 0;
+  border-radius: 0.1em;
+}
+
+#features {
+  margin-top: 10em;
+}
+
+.feature-container {
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 60%;
+  margin: 0 auto 2.5rem auto;
+  column-gap: 5em;
+  align-items: center;
+}
+
+.feature-container h2 {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1.85em;
+}
+
+.feature-list > .feature-container > i {
+  color: darkorange;
+}
+
+.feature-container:first-of-type {
+  column-gap: 0em;
+}

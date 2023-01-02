@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="container">
+      <!-- Header -->
+      <header id="header">
+        <img
+          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+          alt=""
+          id="header-img"
+        />
+        <nav id="nav-bar">
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#how-it-works" class="nav-link">How It Works</a>
+          <a href="#pricing" class="nav-link">Pricing</a>
+        </nav>
+      </header>
+      <!-- End of Header -->
+      <!-- Hero -->
+      <section id="hero">
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <h1>Handcrafted, home-made masterpieces</h1>
+          <input
+            type="email"
+            name=""
+            id="email"
+            required
+            placeholder="Enter your email"
+          />
+          <input type="submit" value="get started" id="submit" />
+        </form>
+      </section>
+      <!-- End of Hero -->
+      <section id="features">
+        <ul class="feature-list">
+          <li class="feature-container">
+            <i class="fa fa-3x fa-fire"></i>
+            <div>
+              <h2>premium materials</h2>
+              Our trombones use the shiniest brass which is sourced locally.
+              This will increase the longevity of your purchase.
+            </div>
+          </li>
+
+          <li class="feature-container">
+            <i class="fa fa-3x fa-truck"></i>
+            <div>
+              <h2>fast shipping</h2>
+              We make sure you recieve your trombone as soon as we have finished
+              making it. We also provide free returns if you are not satisfied.
+            </div>
+          </li>
+
+          <li class="feature-container">
+            <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+            <div>
+              <h2>quality assurance</h2>
+              For every purchase you make, we will ensure there are no damages
+              or faults and we will check and test the pitch of your instrument.
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section id="how-it-works"></section>
+      <section id="pricing"></section>
+    </main>
+  </body>
+</html>
