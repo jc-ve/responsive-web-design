@@ -12,68 +12,155 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main id="container">
-      <!-- Header -->
-      <header id="header">
+    <main>
+      <header class="header" id="header">
         <img
-          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
-          alt=""
           id="header-img"
+          class="header-img"
+          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+          alt="original trombones logo"
         />
-        <nav id="nav-bar">
-          <a href="#features" class="nav-link">Features</a>
-          <a href="#how-it-works" class="nav-link">How It Works</a>
-          <a href="#pricing" class="nav-link">Pricing</a>
+        <nav id="nav-bar" class="nav-bar">
+          <li class="navbar-item">
+            <a href="#section-features" class="nav-link">Features</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#section-how" class="nav-link">How It Works</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#section-pricing" class="nav-link">Pricing</a>
+          </li>
         </nav>
       </header>
-      <!-- End of Header -->
-      <!-- Hero -->
-      <section id="hero">
-        <form action="https://www.freecodecamp.com/email-submit" id="form">
-          <h1>Handcrafted, home-made masterpieces</h1>
-          <input
-            type="email"
-            name=""
-            id="email"
-            required
-            placeholder="Enter your email"
-          />
-          <input type="submit" value="get started" id="submit" />
-        </form>
+      <section class="section section-hero">
+        <div class="hero-content">
+          <h1 class="heading u-margin-bottom-sm">
+            Handcrafted, home-made masterpieces
+          </h1>
+          <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Enter your email address"
+              class="form-input u-margin-bottom-sm"
+            />
+            <input
+              type="submit"
+              class="btn-submit"
+              id="submit"
+              value="Get Started"
+            />
+          </form>
+        </div>
       </section>
-      <!-- End of Hero -->
-      <section id="features">
-        <ul class="feature-list">
-          <li class="feature-container">
-            <i class="fa fa-3x fa-fire"></i>
-            <div>
-              <h2>premium materials</h2>
-              Our trombones use the shiniest brass which is sourced locally.
-              This will increase the longevity of your purchase.
-            </div>
-          </li>
-
-          <li class="feature-container">
-            <i class="fa fa-3x fa-truck"></i>
-            <div>
-              <h2>fast shipping</h2>
-              We make sure you recieve your trombone as soon as we have finished
-              making it. We also provide free returns if you are not satisfied.
-            </div>
-          </li>
-
-          <li class="feature-container">
-            <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
-            <div>
-              <h2>quality assurance</h2>
-              For every purchase you make, we will ensure there are no damages
-              or faults and we will check and test the pitch of your instrument.
-            </div>
-          </li>
-        </ul>
+      <section class="section section-how" id="section-how">
+        <div class="u-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/y8Yv4pnO7qc?si=YJSUxxcmJWvIsNf_"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            id="video"
+            class="video"
+          ></iframe>
+        </div>
       </section>
-      <section id="how-it-works"></section>
-      <section id="pricing"></section>
+      <section class="section section-features" id="section-features">
+        <div class="u-container">
+          <div class="feature-container">
+            <div class="feature">
+              <span class="feature__icon">
+                <ion-icon name="flame"></ion-icon>
+              </span>
+              <div>
+                <p class="feature__title">Premium Materials</p>
+                <p class="feature__desc">
+                  Our trombones use the shiniest brass which is sourced locally.
+                  This will increase the longevity of your purchase.
+                </p>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature__icon">
+                <ion-icon name="airplane"></ion-icon>
+              </span>
+              <div>
+                <p class="feature__title">Fast Shipping</p>
+                <p class="feature__desc">
+                  We make sure you recieve your trombone as soon as we have
+                  finished making it. We also provide free returns if you are
+                  not satisfied.
+                </p>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature__icon">
+                <ion-icon name="battery-full"></ion-icon>
+              </span>
+              <div>
+                <p class="feature__title">Quality Assurance</p>
+                <p class="feature__desc">
+                  For every purchase you make, we will ensure there are no
+                  damages or faults and we will check and test the pitch of your
+                  instrument.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-pricing" id="section-pricing">
+        <div class="u-container">
+          <div class="grid grid-3-cols">
+            <div class="card">
+              <p class="card__title">Tenor Trombone</p>
+              <span class="card__price">$600</span>
+              <ul class="card__features">
+                <li class="card__item">Lorem ipsum.</li>
+                <li class="card__item">Lorem ipsum.</li>
+                <li class="card__item">Lorem ipsum dolor.</li>
+                <li class="card__item">Lorem ipsum.</li>
+              </ul>
+              <a href="#" class="card__cta">Select</a>
+            </div>
+            <div class="card">
+              <p class="card__title">Bass Trombone</p>
+              <span class="card__price">$900</span>
+              <ul class="card__features">
+                <li class="card__item">Lorem ipsum.</li>
+                <li class="card__item">Lorem ipsum.</li>
+                <li class="card__item">Lorem ipsum dolor.</li>
+                <li class="card__item">Lorem ipsum.</li>
+              </ul>
+              <a href="#" class="card__cta">Select</a>
+            </div>
+            <div class="card">
+              <p class="card__title">Valve Trombone</p>
+              <span class="card__price">$1200</span>
+              <ul class="card__features">
+                <li class="card__item">Plays similar to a Trumpet</li>
+                <li class="card__item">Great for Jazz Bands</li>
+                <li class="card__item">Lorem ipsum dolor.</li>
+                <li class="card__item">Lorem ipsum.</li>
+              </ul>
+              <a href="#" class="card__cta">Select</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
